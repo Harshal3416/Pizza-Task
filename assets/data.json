@@ -2,19 +2,19 @@
     {
       "name": "Neapolitan Pizza",
       "price": 480,
-      "image": "/assets/images/pizza1.jpg",
+      "image": "assets/images/pizza1.jpg",
       "id": "01"
     },
     {
       "name": "Chicago Pizza",
       "price": 379,
-      "image": "/assets/images/pizza2.jpg",
+      "image": "./assets/images/pizza2.jpg",
       "id": "02"
     },
     {
       "name": "Detroit Pizza",
       "price": 597,
-      "image": "/assets/images/pizza3.jpg",
+      "image": "../assets/images/pizza3.jpg",
       "id": "03"
     },
     {
