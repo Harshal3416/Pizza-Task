@@ -1,0 +1,122 @@
+<div class="row lead">
+  <div class="col-6">
+    <nav class="navbar navbar-dark bg-dark row">
+      <div class="container-fluid col-8">
+        <a class="navbar-brand" href="#">Ordered Pizza List</a>
+      </div>
+      <button type="button" class="btn btn-light col-4" data-toggle="modal" data-target="#exampleModal">
+        Place New Order
+      </button>
+    </nav>
+    <div class="alert alert-info m-4" *ngIf="!orderedPizza.length">No oders</div>
+    <div 
+    [ngClass]="{
+      'border-secondary':item.status === 'Order Received',
+      'border-success':item.status === 'Ready to Serve',
+      'border-info':item.status === 'Preparing'
+    }"
+    class="card m-3 p-3 border" style="cursor:pointer" (click)="showDetails(item)" *ngFor="let item of orderedPizza; let i= index">
+      <div class="row">
+        <div class="col">
+          <p>Customer Name: </p>
+          <p>No of items: </p>
+          <p>Total Amount: </p>
+          <p>Status of order: </p>
+        </div>
+        <div class="col">
+          <p>{{item.custName}}</p>
+          <p>{{item.qty}}</p>
+          <p>&#8377; {{item.totalPrice}} </p>
+          <button [ngClass]="{
+            'btn-secondary':item.status === 'Order Received',
+            'btn-success':item.status === 'Ready to Serve',
+            'btn-info':item.status === 'Preparing'
+          }" class="btn" (click)="changeStatus(item, i)">{{item.status}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Order Details</a>
+      </div>
+    </nav>
+    <div [ngClass]="{
+      'border-secondary':orderDetail.status === 'Order Received',
+      'border-success':orderDetail.status === 'Ready to Serve',
+      'border-info':orderDetail.status === 'Preparing'
+    }" class="card m-3 p-3 border" *ngIf="orderDetail">
+      <div class="row">
+        <div class="col">
+          <p>Item Name: </p>
+          <p>Price: </p>
+          <p>Total Price: </p>
+          <p>Customer Name: </p>
+          <p>Address: </p>
+        </div>
+        <div class="col">
+          <p>{{orderDetail.itemName}}</p>
+          <p>{{orderDetail.price}}  (Quantity): {{orderDetail.qty}}</p>
+          <p>&#8377; {{orderDetail.totalPrice}}</p>
+          <p>{{orderDetail.custName}}</p>
+          <p>{{orderDetail.address}}</p>
+        </div>
+      </div>
+      <img [src]="orderDetail.image" alt="">
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="p-4 m-3" *ngIf="selectPizza">
+          <h3 class="card-title">Select Pizza</h3>
+        
+            <div class="alert alert-secondary row p-2" role="alert" *ngFor="let pizza of pizzas">
+              <div class="col-2">
+                <img class="rounded-circle" [src]="pizza?.image" width="60" height="50">
+              </div>
+              <div class="col-8">
+                {{pizza?.name}} <br>
+                &#8377; {{pizza?.price}}
+              </div>
+              <div class="col-2">
+                <button class="btn btn-dark btn-sm mr-auto" (click)="selectedPizza(pizza)">Select</button>
+              </div>
+          </div>
+        
+        </div>
+  
+        <div class="container my-3" *ngIf="custDetails">
+          <h3 class="card-title">Enter Details</h3>
+
+          <form [formGroup]="pizzaForm" (ngSubmit)="placeOrder()">
+            <small class="text-danger">*All the fields are MANDATORY*</small>
+            <div class="form-group">
+              <input type="text" disabled class="form-control" required formControlName="itemName" placeholder="Pizza Name">
+            </div>
+            <div class="form-group">
+              <input type="text" disabled class="form-control" required formControlName="price" placeholder="Price">
+            </div>
+            <div class="form-group">
+              <input type="number" min="1" step="1" class="form-control" required formControlName="qty" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" required formControlName="custName" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" required formControlName="address" placeholder="Address">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-dark" [disabled]="pizzaForm.invalid">Place Order</button>
+            </div>
+          </form>
+        </div>
+        <button class="btn btn-light" data-dismiss="modal" (click)="close()">Close</button>
+
+      </div>
+    </div>
+  </div>
