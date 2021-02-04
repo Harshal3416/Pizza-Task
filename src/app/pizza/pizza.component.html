@@ -8,7 +8,7 @@
         Place New Order
       </button>
     </nav>
-    <div class="alert alert-info m-4" *ngIf="!orderedPizza.length">No oders</div>
+    <div class="alert alert-info m-4" *ngIf="!orderedPizza.length">No Orders yet..!!</div>
     <div 
     [ngClass]="{
       'border-secondary':item.status === 'Order Received',
@@ -51,13 +51,15 @@
         <div class="col">
           <p>Item Name: </p>
           <p>Price: </p>
+          <p>Quantity: </p>
           <p>Total Price: </p>
           <p>Customer Name: </p>
           <p>Address: </p>
         </div>
         <div class="col">
           <p>{{orderDetail.itemName}}</p>
-          <p>{{orderDetail.price}}  (Quantity): {{orderDetail.qty}}</p>
+          <p>&#8377; {{orderDetail.price}}</p>
+          <p>{{orderDetail.qty}}</p>
           <p>&#8377; {{orderDetail.totalPrice}}</p>
           <p>{{orderDetail.custName}}</p>
           <p>{{orderDetail.address}}</p>
