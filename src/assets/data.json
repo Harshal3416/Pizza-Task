@@ -8,31 +8,31 @@
     {
       "name": "Chicago Pizza",
       "price": 379,
-      "image": "./assets/images/pizza2.jpg",
+      "image": "assets/images/pizza2.jpg",
       "id": "02"
     },
     {
       "name": "Detroit Pizza",
       "price": 597,
-      "image": "../assets/images/pizza3.jpg",
+      "image": "assets/images/pizza3.jpg",
       "id": "03"
     },
     {
       "name": "California Pizza",
       "price": 721,
-      "image": "/assets/images/pizza4.jpg",
+      "image": "assets/images/pizza4.jpg",
       "id": "04"
     },
     {
       "name": "Family Night Pizza",
       "price": 429,
-      "image": "/assets/images/pizza5.jpg",
+      "image": "assets/images/pizza5.jpg",
       "id": "05"
     },
     {
       "name": "Liberty Pizza",
       "price": 379,
-      "image": "/assets/images/pizza6.jpg",
+      "image": "assets/images/pizza6.jpg",
       "id": "06"
     }
   ]
