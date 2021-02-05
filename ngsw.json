@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1612544531470,
+  "index": "https://Harshal3416.github.io/Pizza-Task/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://Harshal3416.github.io/Pizza-Task/favicon.ico",
+        "https://Harshal3416.github.io/Pizza-Task/index.html",
+        "https://Harshal3416.github.io/Pizza-Task/main.b82e6ca0f56a5190f5c2.js",
+        "https://Harshal3416.github.io/Pizza-Task/manifest.webmanifest",
+        "https://Harshal3416.github.io/Pizza-Task/polyfills.35a5ca1855eb057f016a.js",
+        "https://Harshal3416.github.io/Pizza-Task/runtime.acf0dec4155e77772545.js",
+        "https://Harshal3416.github.io/Pizza-Task/scripts.53f75ab19ed1f427752e.js",
+        "https://Harshal3416.github.io/Pizza-Task/styles.6870b83c1fcf02805d69.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://Harshal3416.github.io/Pizza-Task/assets/data.json",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-128x128.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-144x144.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-152x152.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-192x192.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-384x384.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-512x512.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-72x72.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-96x96.png",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/logo.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza1.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza2.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza3.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza4.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza5.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza6.jpg",
+        "https://Harshal3416.github.io/Pizza-Task/assets/images/pizzalogo.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://Harshal3416.github.io/Pizza-Task/assets/data.json": "a8651a57dd21db68cadd806c8821e50f478acb8b",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://Harshal3416.github.io/Pizza-Task/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/logo.jpg": "71e93b24f56d49402446566e4bda30b35d2613d9",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza1.jpg": "ed5f2a561468aa9fceb7c2f2f2350394f4d68b34",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza2.jpg": "e6620629902772335d9bfde74d521a4d3fa0e9d8",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza3.jpg": "28bd61cc215adad7c089e218769ad31a71dfeaaa",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza4.jpg": "1ea986c8f53372dc7f0b4fe4f757bf2d39f85080",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza5.jpg": "8d5f81324f8a9730ae872b713af4f5f67b91f10c",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizza6.jpg": "59a3711a9ad50fe2feb236cde4288e1323ec4c69",
+    "https://Harshal3416.github.io/Pizza-Task/assets/images/pizzalogo.jpg": "cad2edc88afd332d999e11f18d1b71f08c3dd7fb",
+    "https://Harshal3416.github.io/Pizza-Task/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://Harshal3416.github.io/Pizza-Task/index.html": "7582b99b84b32a702787e91865bdca926178ef95",
+    "https://Harshal3416.github.io/Pizza-Task/main.b82e6ca0f56a5190f5c2.js": "bf17c9227adef841b8c8ab81cd6240386096dfb2",
+    "https://Harshal3416.github.io/Pizza-Task/manifest.webmanifest": "0e74b9f6ecad3e950c5134200d044e8542234406",
+    "https://Harshal3416.github.io/Pizza-Task/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
+    "https://Harshal3416.github.io/Pizza-Task/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://Harshal3416.github.io/Pizza-Task/scripts.53f75ab19ed1f427752e.js": "e372204a47910fd6eee149b81caa5f6d24cbb60c",
+    "https://Harshal3416.github.io/Pizza-Task/styles.6870b83c1fcf02805d69.css": "06172fdbedd71712193c4f0096d0255ed619b81c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
